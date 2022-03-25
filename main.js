@@ -61,11 +61,14 @@ function addBlog(event) {
 
     blogs.push(blog);
     console.log(blogs);
-
+    
     renderBlog();
 }
 
+
 function renderBlog() {
+    
+    document.getElementById('contents').innerHTML = "";
     for (let i in blogs) {
         document.getElementById('contents').innerHTML +=
         `
@@ -75,7 +78,7 @@ function renderBlog() {
                 </div>
                 <div class="card-body">
                     <h4>${blogs[i].title} </h4>
-                    <a href="project/project6.html">
+                    <a href="project/project7.html">
                         View More <i class='bx bx-right-arrow-alt'></i>
                     </a>
                     <span>Game</span>
@@ -96,5 +99,7 @@ function renderBlog() {
         `
     };
 };
+
+
 
 
